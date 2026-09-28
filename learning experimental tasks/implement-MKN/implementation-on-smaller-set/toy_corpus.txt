@@ -1,0 +1,12 @@
+the cat sat on the mat
+the cat sat on the rug
+the cat sat near the mat
+the dog sat on the mat
+the dog sat on the rug
+the dog sat near the mat
+a cat sat on the mat
+a cat sat on the rug
+a dog sat on the mat
+a dog sat on the rug
+birds fly over the mat
+birds fly over the rug

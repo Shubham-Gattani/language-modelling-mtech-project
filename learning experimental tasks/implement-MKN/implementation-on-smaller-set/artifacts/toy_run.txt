@@ -1,0 +1,29 @@
+Modified Kneser–Ney toy simulation
+==================================
+sentences: 12
+vocabulary size (excluding <s>): 13
+distinct bigram types: 20
+
+discounts by order:
+  order 2: D1=0.500000, D2=1.625000, D3+=2.000000
+  order 3: D1=0.181818, D2=1.757576, D3+=2.272727
+
+selected counts:
+  c(('the', 'cat')) = 3
+  c(('the', 'cat', 'sat')) = 3
+  c(('cat', 'fly')) = 0
+
+P(sat | ('the', 'cat')) = 0.7272727273
+  {'order': 3, 'history': ('the', 'cat'), 'event': 'seen_history_seen_ngram', 'ngram': ('the', 'cat', 'sat'), 'count': 3, 'selected_discount': 2.2727272727272725, 'history_count': 3, 'direct_contribution': 0.24242424242424251, 'lambda': 0.7575757575757575, 'lower_order_probability': 0.64, 'probability': 0.7272727272727273}
+  {'order': 2, 'history': ('cat',), 'event': 'seen_history_seen_ngram', 'ngram': ('cat', 'sat'), 'count': 5, 'selected_discount': 2.0, 'history_count': 5, 'direct_contribution': 0.6, 'lambda': 0.4, 'lower_order_probability': 0.1, 'probability': 0.64}
+  {'order': 1, 'history': (), 'event': 'continuation_probability', 'direct_contribution': 0.0, 'lambda': 1.0, 'lower_order_probability': 0.1, 'probability': 0.1}
+
+P(fly | ('cat',)) = 0.0200000000
+  {'order': 2, 'history': ('cat',), 'event': 'seen_history_unseen_ngram', 'ngram': ('cat', 'fly'), 'count': 0, 'selected_discount': 0.0, 'history_count': 5, 'direct_contribution': 0.0, 'lambda': 0.4, 'lower_order_probability': 0.05, 'probability': 0.020000000000000004}
+  {'order': 1, 'history': (), 'event': 'continuation_probability', 'direct_contribution': 0.0, 'lambda': 1.0, 'lower_order_probability': 0.05, 'probability': 0.05}
+
+normalization checks:
+  (): total=1.0000000000 [PASS]
+  ('the',): total=1.0000000000 [PASS]
+  ('cat',): total=1.0000000000 [PASS]
+  ('the', 'cat'): total=1.0000000000 [PASS]
