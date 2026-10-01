@@ -93,6 +93,10 @@ When AI writes or changes code in this repo, keep it simple and easy to read.
 - If an automated test would not add meaningful evidence, use a repeatable static or manual check and explain why.
 - Record commands run, results, skipped checks with reasons, limitations, and remaining risk.
 
+## Teaching rules. 
+
+If you are teaching or explaining me a concept. Use the guidelines in this file: TEMP-DELETE/teaching_style.md
+
 # SOME MISC RULES
 
 - When debugging, first check only the last 100 lines of the logs (`tail -n 100`). If that does not provide convincing evidence, check the last 250 lines (`tail -n 250`). Read the full logs only if those focused checks are insufficient.
