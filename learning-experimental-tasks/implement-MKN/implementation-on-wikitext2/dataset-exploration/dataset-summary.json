@@ -1,0 +1,381 @@
+{
+  "train": {
+    "raw_row_count": 36718,
+    "empty_row_count": 12951,
+    "non_empty_row_count": 23767,
+    "total_token_count": 2051910,
+    "distinct_token_count": 33277,
+    "shortest_row_tokens": 1,
+    "longest_row_tokens": 699,
+    "average_row_tokens": 86.33441326208609,
+    "rows_with_unk": 14334,
+    "unk_token_count": 54625,
+    "most_common_tokens": [
+      {
+        "token": "the",
+        "count": 113161
+      },
+      {
+        "token": ",",
+        "count": 99913
+      },
+      {
+        "token": ".",
+        "count": 73388
+      },
+      {
+        "token": "of",
+        "count": 56889
+      },
+      {
+        "token": "<unk>",
+        "count": 54625
+      },
+      {
+        "token": "and",
+        "count": 50603
+      },
+      {
+        "token": "in",
+        "count": 39453
+      },
+      {
+        "token": "to",
+        "count": 39190
+      },
+      {
+        "token": "a",
+        "count": 34237
+      },
+      {
+        "token": "=",
+        "count": 29570
+      },
+      {
+        "token": "\"",
+        "count": 28309
+      },
+      {
+        "token": "was",
+        "count": 20985
+      },
+      {
+        "token": "The",
+        "count": 17602
+      },
+      {
+        "token": "@-@",
+        "count": 16906
+      },
+      {
+        "token": "that",
+        "count": 14135
+      },
+      {
+        "token": "as",
+        "count": 14021
+      },
+      {
+        "token": "'s",
+        "count": 14002
+      },
+      {
+        "token": "on",
+        "count": 13678
+      },
+      {
+        "token": "for",
+        "count": 13307
+      },
+      {
+        "token": "with",
+        "count": 12606
+      }
+    ]
+  },
+  "validation": {
+    "raw_row_count": 3760,
+    "empty_row_count": 1299,
+    "non_empty_row_count": 2461,
+    "total_token_count": 213886,
+    "distinct_token_count": 13776,
+    "shortest_row_tokens": 1,
+    "longest_row_tokens": 429,
+    "average_row_tokens": 86.91019910605445,
+    "rows_with_unk": 1838,
+    "unk_token_count": 11718,
+    "most_common_tokens": [
+      {
+        "token": "the",
+        "count": 12639
+      },
+      {
+        "token": "<unk>",
+        "count": 11718
+      },
+      {
+        "token": ",",
+        "count": 10079
+      },
+      {
+        "token": ".",
+        "count": 7770
+      },
+      {
+        "token": "of",
+        "count": 5916
+      },
+      {
+        "token": "and",
+        "count": 5334
+      },
+      {
+        "token": "in",
+        "count": 4261
+      },
+      {
+        "token": "to",
+        "count": 4131
+      },
+      {
+        "token": "a",
+        "count": 3439
+      },
+      {
+        "token": "=",
+        "count": 2924
+      },
+      {
+        "token": "\"",
+        "count": 2568
+      },
+      {
+        "token": "was",
+        "count": 2324
+      },
+      {
+        "token": "The",
+        "count": 2078
+      },
+      {
+        "token": "@-@",
+        "count": 1864
+      },
+      {
+        "token": "on",
+        "count": 1519
+      },
+      {
+        "token": "'s",
+        "count": 1419
+      },
+      {
+        "token": "that",
+        "count": 1376
+      },
+      {
+        "token": "as",
+        "count": 1372
+      },
+      {
+        "token": "by",
+        "count": 1273
+      },
+      {
+        "token": "for",
+        "count": 1231
+      }
+    ]
+  },
+  "test": {
+    "raw_row_count": 4358,
+    "empty_row_count": 1467,
+    "non_empty_row_count": 2891,
+    "total_token_count": 241211,
+    "distinct_token_count": 14142,
+    "shortest_row_tokens": 1,
+    "longest_row_tokens": 481,
+    "average_row_tokens": 83.435143548945,
+    "rows_with_unk": 2224,
+    "unk_token_count": 15218,
+    "most_common_tokens": [
+      {
+        "token": "<unk>",
+        "count": 15218
+      },
+      {
+        "token": "the",
+        "count": 14002
+      },
+      {
+        "token": ",",
+        "count": 11120
+      },
+      {
+        "token": ".",
+        "count": 8919
+      },
+      {
+        "token": "of",
+        "count": 6770
+      },
+      {
+        "token": "and",
+        "count": 5871
+      },
+      {
+        "token": "to",
+        "count": 4743
+      },
+      {
+        "token": "in",
+        "count": 4497
+      },
+      {
+        "token": "a",
+        "count": 3787
+      },
+      {
+        "token": "=",
+        "count": 3483
+      },
+      {
+        "token": "was",
+        "count": 2575
+      },
+      {
+        "token": "\"",
+        "count": 2349
+      },
+      {
+        "token": "@-@",
+        "count": 2114
+      },
+      {
+        "token": "The",
+        "count": 2075
+      },
+      {
+        "token": "(",
+        "count": 1616
+      },
+      {
+        "token": ")",
+        "count": 1616
+      },
+      {
+        "token": "on",
+        "count": 1611
+      },
+      {
+        "token": "as",
+        "count": 1493
+      },
+      {
+        "token": "that",
+        "count": 1492
+      },
+      {
+        "token": "for",
+        "count": 1445
+      }
+    ]
+  },
+  "train_prefix": {
+    "requested_non_empty_rows": 5000,
+    "statistics": {
+      "raw_row_count": 5000,
+      "empty_row_count": 0,
+      "non_empty_row_count": 5000,
+      "total_token_count": 421011,
+      "distinct_token_count": 21568,
+      "shortest_row_tokens": 1,
+      "longest_row_tokens": 699,
+      "average_row_tokens": 84.2022,
+      "rows_with_unk": 3054,
+      "unk_token_count": 11986,
+      "most_common_tokens": [
+        {
+          "token": "the",
+          "count": 22796
+        },
+        {
+          "token": ",",
+          "count": 21018
+        },
+        {
+          "token": ".",
+          "count": 14966
+        },
+        {
+          "token": "<unk>",
+          "count": 11986
+        },
+        {
+          "token": "of",
+          "count": 11951
+        },
+        {
+          "token": "and",
+          "count": 10465
+        },
+        {
+          "token": "in",
+          "count": 8043
+        },
+        {
+          "token": "to",
+          "count": 7798
+        },
+        {
+          "token": "a",
+          "count": 6857
+        },
+        {
+          "token": "=",
+          "count": 6100
+        },
+        {
+          "token": "\"",
+          "count": 5809
+        },
+        {
+          "token": "was",
+          "count": 4063
+        },
+        {
+          "token": "@-@",
+          "count": 3749
+        },
+        {
+          "token": "The",
+          "count": 3561
+        },
+        {
+          "token": "that",
+          "count": 2913
+        },
+        {
+          "token": "as",
+          "count": 2853
+        },
+        {
+          "token": "for",
+          "count": 2833
+        },
+        {
+          "token": "with",
+          "count": 2759
+        },
+        {
+          "token": "'s",
+          "count": 2685
+        },
+        {
+          "token": "on",
+          "count": 2594
+        }
+      ]
+    }
+  }
+}
