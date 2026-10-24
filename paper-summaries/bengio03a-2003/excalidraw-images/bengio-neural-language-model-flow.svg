@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="700" viewBox="0 0 1920 700">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L10,3 L0,6 Z" fill="#1e1e1e"/>
+    </marker>
+    <style>
+      .box { stroke:#1e1e1e; stroke-width:3; rx:14; }
+      .label { font-family:Arial,sans-serif; font-size:25px; text-anchor:middle; fill:#1e1e1e; }
+      .arrow { stroke:#1e1e1e; stroke-width:3; marker-end:url(#arrow); }
+    </style>
+  </defs>
+  <rect width="1920" height="700" fill="white"/>
+  <text x="960" y="75" class="label" font-size="36" font-weight="bold">Bengio Neural Language Model: one forward pass</text>
+  <rect x="50" y="275" width="200" height="110" fill="#e3f2fd" class="box"/>
+  <text x="150" y="320" class="label"><tspan x="150">Context words</tspan><tspan x="150" dy="34">the, cat</tspan></text>
+  <rect x="330" y="275" width="210" height="110" fill="#e8f5e9" class="box"/>
+  <text x="435" y="320" class="label"><tspan x="435">Lookup C</tspan><tspan x="435" dy="34">word vectors</tspan></text>
+  <rect x="620" y="275" width="210" height="110" fill="#fff3e0" class="box"/>
+  <text x="725" y="320" class="label"><tspan x="725">Concatenate</tspan><tspan x="725" dy="34">x = [C(the); C(cat)]</tspan></text>
+  <rect x="910" y="275" width="230" height="110" fill="#f3e5f5" class="box"/>
+  <text x="1025" y="320" class="label"><tspan x="1025">Hidden layer</tspan><tspan x="1025" dy="34">h = tanh(d + Hx)</tspan></text>
+  <rect x="1220" y="275" width="210" height="110" fill="#ffebee" class="box"/>
+  <text x="1325" y="320" class="label"><tspan x="1325">Scores y</tspan><tspan x="1325" dy="34">for 5 words</tspan></text>
+  <rect x="1510" y="275" width="190" height="110" fill="#e0f7fa" class="box"/>
+  <text x="1605" y="320" class="label"><tspan x="1605">Softmax</tspan><tspan x="1605" dy="34">probabilities</tspan></text>
+  <rect x="1760" y="275" width="145" height="110" fill="#fff8e1" class="box"/>
+  <text x="1832" y="320" class="label"><tspan x="1832">Target sat</tspan><tspan x="1832" dy="34">loss</tspan></text>
+  <line x1="250" y1="330" x2="330" y2="330" class="arrow"/>
+  <line x1="540" y1="330" x2="620" y2="330" class="arrow"/>
+  <line x1="830" y1="330" x2="910" y2="330" class="arrow"/>
+  <line x1="1140" y1="330" x2="1220" y2="330" class="arrow"/>
+  <line x1="1430" y1="330" x2="1510" y2="330" class="arrow"/>
+  <line x1="1700" y1="330" x2="1760" y2="330" class="arrow"/>
+  <text x="960" y="510" class="label" font-size="24">Training then backpropagates this loss through the network and updates C, H, d, W, U, and b.</text>
+</svg>
