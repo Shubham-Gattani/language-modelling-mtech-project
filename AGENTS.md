@@ -100,3 +100,6 @@ If you are teaching or explaining me a concept. Use the guidelines in this file:
 # SOME MISC RULES
 
 - When debugging, first check only the last 100 lines of the logs (`tail -n 100`). If that does not provide convincing evidence, check the last 250 lines (`tail -n 250`). Read the full logs only if those focused checks are insufficient.
+- Markdown rendering depends on where the content will be displayed:
+  - When creating or editing a `.md` file, format it for VS Code Markdown Preview. Use the repository’s normal Markdown and KaTeX conventions.
+  - When replying directly in the TUI (terminal user interface), format the response for the TUI renderer instead of assuming VS Code support. Prefer plain text, simple inline Markdown, fenced code blocks, and ASCII-safe equations. Avoid HTML entities and complex LaTeX/display-math syntax when they may not render correctly in the TUI.
