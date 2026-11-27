@@ -485,6 +485,14 @@ The model performs the following:
 
 The important parallelism is that the representations for all three positions can be computed together during training, because the causal convolution uses a fixed pattern of allowed inputs rather than a hidden state that must be passed one position at a time.
 
+### Deferred follow-up: inspect gradient flow
+
+For this learning path, it is enough to understand that cross-entropy produces a loss and `loss.backward()` propagates its gradient through the computation graph. PyTorch calculates the parameter gradients; inspecting every parameter gradient is not needed to understand this basic flow.
+
+Revisit gradient diagnostics when investigating unstable or unexpected learning behavior, deeper GCNNs, residual connections, or a custom implementation. Keep the first comparison focused: record the L2 norm of the loss gradient at each convolutional block's output during training, then compare otherwise similar networks with different depths and with or without residual connections. Use the same input batch and comparable initialization, and repeat the measurements across batches or training steps.
+
+Gradients that consistently shrink toward earlier blocks can indicate vanishing gradients; gradients that grow sharply can indicate exploding gradients. A single small or large norm is not conclusive, and residual connections can help gradient flow but do not guarantee stability. This follow-up is about layer-wise trends, not deriving or reviewing every parameter gradient.
+
 ## 14. A reading guide for the paper’s equations
 
 When you read the paper line by line, keep this translation table nearby:
